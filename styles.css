@@ -1,0 +1,190 @@
+*{margin:0;padding:0;}
+html,body{height:100%}
+.frame{margin:auto;max-width:1200px}
+.embed{position:relative;padding-bottom:60%; /* padding-bottom = iframe width */
+clear: both;height:0;overflow:hidden;max-width:100%;height:550px}
+.embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index: 1;}
+
+body {
+   text-align: center;
+   /*display: flex;
+   justify-content: center;
+   align-items: center;*/
+}
+
+h1, h2, h3 {
+   font-family: 'Arial, Helvetica, sans-serif'
+   /* Add other styles as needed */
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  img.resize {
+     max-width:30%;
+     max-height:30%;
+  }
+
+ /* Style the tab */
+  .tab {
+     overflow: hidden;
+
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+     background-color: #413a3a;
+     float: center;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 16px;
+     color: white
+  }
+
+  /* Change background color of buttons on hover */ 
+  .tab button:hover {
+     background-color: #34782a;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+     background-color: #4CAF50;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+     display: none;
+     padding: 6px 12px;
+     border-top: none;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+   background-color: #979a99;
+   overflow: hidden;
+ }
+ 
+ /* Style the links inside the navigation bar */
+ .topnav a {
+   float: left;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 18px 16px;
+   text-decoration: none;
+   font-size: 20px;
+ }
+ 
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #9c2c9e;
+   color: white;
+ }
+ 
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: #e07ed5;
+   color: white;
+ }
+
+ .topnav img {
+   float: left; /* Adjust this based on your design */
+   height: 59px; /* Adjust the height of the logo as needed */
+   margin-right: 20px; /* Adjust the spacing between logo and menu items */
+}
+
+.image-container {
+   max-width: 600px; /* Adjust the maximum width as needed */
+   margin: 0 auto; /* Center the container horizontally */
+}
+
+.image-container img {
+   width: 100%; /* Make the image fill the container */
+   height: auto; /* Maintain aspect ratio */
+   display: block; /* Remove default inline behavior */
+   margin-bottom: 10px; /* Add space between images */
+}
+
+.text-container h1{
+   font-family: 'Arial', sans-serif;
+   color: #000000;
+   font-size: 1.7rem;
+   font-weight: normal;
+   font-style: normal;
+ }
+
+.p1 {
+   font-family:verdana;
+ }
+
+ .p2 {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .p3 {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .title {
+   padding: 12px;
+   justify-content: center;
+}
+
+ .row {
+   padding: 12px;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .parent {
+   padding: 12px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: stretch; 
+   }
+ 
+   
+   .child {
+      padding: 12px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex: 1 1 150px;
+   }
+
+   /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+   flex: 30%; /* Set the width of the sidebar */
+   background-color: #b5bfb3; /* Grey background color */
+   padding: 20px; /* Some padding */
+ }
+ 
+ /* Main column */
+ .main {
+   flex: 70%; /* Set the width of the main content */
+   background-color: white; /* White background color */
+   padding: 20px; /* Some padding */
+   text-align: left;
+ }
+   
+
+
