@@ -11,9 +11,9 @@
     <body>
         <div class="topnav">
             <a href="index.html" class="active"> Homepage </a> 
-            <a href="CV.html"> Curriculum Vitae </a> 
-            <a href="research statement.html"> Research Interest </a>
-            <a href="research experience.html"> Research Experience </a>
+            <a href="#CV" id ="CV" onClick="myFunc(this.id);">Curriculum Vitae</a>
+            <a href="research statement.html"> Research interest </a>
+            <a href="research experience.html"> Research experience </a>
             <a href="contact.html"> Contact & Links </a>  
         </div>
 
@@ -34,8 +34,12 @@ Go to any big-name university's department web page for field X and browse the f
             <div class="side"> 
                 <img src="./foto.jpg" alt="Profile Photo">
             </div>
-        </div> 
+        </div>
+
+        <iframe class="pdf2" id="main_CV2" src="./CV.pdf#view=FitH" style="display:none;" type="application/pdf"/></iframe>
+        <embed class="pdf" id="main_CV" src="./CV.pdf#view=FitH" style="display:none;" type="application/pdf"/>
+
+
+        <script type="text/javascript" src="main.js"></script>
     </body>
-
-
 </html>
