@@ -65,30 +65,49 @@ body {
 
 
 h1, h2, h3 {
-   font-family: 'Arial, Helvetica, sans-serif'
+   font-family: 'Arial, Helvetica, sans-serif';
    /* Add other styles as needed */
+   font-size: x-large;
 }
-
- .row {
-  text-align: left;
-  display: flex;
-  width: 800px;
- }
 
  /* Main column */
  .main {
    background-color: #ffffffef; /* White background color */
    padding: 20px; /* Some padding */
-   margin-top: 10px;
-   max-width: 800px; /* Set the maximum width */
+   margin-top: 30px;
+   max-width: 80%; /* Set the maximum width */
   margin-left: auto; /* Center the element horizontally */
   margin-right: auto; /* Center the element horizontally */
  }
 
+ .row {
+  display: flex;
+  width: fit-content;
+ }
+ 
+ .text-container{
+  padding: 7%;
+  text-align: justify;
+  width: 70%; /* Set width to take up 70% of the row */
+ }
+
+ .image-container{
+  padding: 5%;
+  padding-top: 10%;
+  width: 40%; /* Set width to take up 30% of the row */
+  text-align: center; /* Center the image horizontally */
+ }
+
  .right-image {
   padding: 20px;
-  display: block;
+  max-width: 100%; /* Ensure the image does not exceed its container */
  }
+ /* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
  .bottom-image {
   display: none;
@@ -110,27 +129,34 @@ h1, h2, h3 {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add a shadow at the bottom */
   }
 
+  h1, h2, h3 {
+    font-size: large; /* Decrease font size for smaller screens */
+ }
 
+ 
   .topnav a {
     padding: 10px; /* Adjust padding for smaller screens */
     font-size: 16px; /* Decrease font size for smaller screens */
   }
 
+  .text-container{
+    padding: 7%;
+    text-align:left;
+    width: 70%; /* Set width to take up 70% of the row */
+   }
+
+   
   .bottom-image {
     display: block;
+    max-width: 50%; /* Ensure the image does not exceed its container */
+    padding: 5%;
   }
 
   .right-image {
     display: none;
   }
 
-  .row {
-    text-align: left;
-    display: flex;
-    width: 70%;
-   }
-
-   .row p1 {
+   .row p {
     font-size: smaller;
    }
   
