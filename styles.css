@@ -129,6 +129,10 @@ h1, h2, h3 {
     display: flex;
     width: 70%;
    }
+
+   .row p1 {
+    font-size: smaller;
+   }
   
   /* Add any other necessary adjustments for smaller screens */
 }
