@@ -9,37 +9,78 @@
     </head>
 
     <body>
-        <div class="topnav">
-            <a href="index.html" class="active"> Homepage </a> 
-            <a href="#CV" id ="CV" onClick="myFunc(this.id);">Curriculum Vitae</a>
-            <a href="research statement.html"> Research Interest </a>
-            <a href="research experience.html"> Research experience </a>
-            <a href="contact.html"> Contact & Links </a>  
-        </div>
-
-        <div class="row">
-            <div class="main"> 
-                <h3> About Me </h3>
-                <br> <br>
-                <p1> If you know someone - anyone - in the field, have them recommend names of labs/professors to you. The names they give you will likely be people relevant to their research who have done solid research, and have really established their names in the field. This is the best approach.
-
-If you have access to journal articles, find a good journal in field X and look for a recent paper. There are two ways to do this one:
-
-Look in a couple of articles that seem interesting and see which authors are cited most often in the "introduction" section. Chances are, those authors have completed some recent seminal work, which all these other papers are using as their research springboard.
-
-Look for a review paper, and see who is cited often. This isn't such a good method, as I've found that many review articles will be fairly biased towards themselves/their collaborators, but it still can be useful
-
-Go to any big-name university's department web page for field X and browse the faculty listings. This is a total crapshoot; you'll find lots of labs, but there's no surefire way to tell quality of lab from their department web page. </p1>
-            </div> 
-            <div class="side"> 
-                <img src="./foto.jpg" alt="Profile Photo">
+        <div class="empty-block">
+            <div class="topnav" id= "topnav">
+                <a class = "home" href="./index.html">Homepage</a>
+                <a href="#CV" id ="CV" onClick="myFunc(this.id);">Curriculum Vitae</a>
+                <a href="#ResearchStatement" id ="ResearchStatement" onClick="myFunc(this.id);">Research Interest</a>
+                <a href="#ResearchExperience" id ="ResearchExperience" onClick="myFunc(this.id);">Research Experience</a>
+                <a href="#Contact" id ="Contact" onClick="myFunc(this.id);">Contact & Links</a>
             </div>
         </div>
 
+        <!-- HOMEPAGE -->
+        <div class="main" id="main"> 
+            <div class="row">
+                <p1>
+                    <h3> About Me </h3> 
+                    <br> <br>
+                    If you know someone - anyone - in the field, have them recommend names of labs/professors to you. The names they give you will likely be people relevant to their research who have done solid research, and have really established their names in the field. This is the best approach.
+                    If you have access to journal articles, find a good journal in field X and look for a recent paper. There are two ways to do this one:
+                    Look in a couple of articles that seem interesting and see which authors are cited most often in the "introduction" section. Chances are, those authors have completed some recent seminal work, which all these other papers are using as their research springboard.
+                    Look for a review paper, and see who is cited often. This isn't such a good method, as I've found that many review articles will be fairly biased towards themselves/their collaborators, but it still can be useful
+                    Go to any big-name university's department web page for field X and browse the faculty listings. This is a total crapshoot; you'll find lots of labs, but there's no surefire way to tell quality of lab from their department web page. 
+                </p1>
+                <br> <br>
+                <img src="./foto.jpg" alt="Profile Photo" class="right-image">
+            </div>
+        </div>
+
+
+        <!-- ResearchStatement -->
+        <div class="main" id="main_ResearchStatement" style="display:none;text-align: left;"> 
+            <div class="row">
+                <p1>
+                    <h3> Research Statement </h3> 
+                    <br> <br>
+                    ResearchStatement
+                </p1>
+                <br> <br>
+                <img src="./foto.jpg" alt="Profile Photo" class="right-image">
+            </div>
+        </div>
+
+        <!-- ResearchExperience -->
+        <div class="main" id="main_ResearchExperience" style="display:none;text-align: left;"> 
+            <div class="row">
+                <p1>
+                    <h3> Research Experience </h3> 
+                    <br> <br>
+                    ResearchExperience
+                </p1>
+                <br> <br>
+                <img src="./foto.jpg" alt="Profile Photo" class="right-image">
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="main" id="main_Contact" style="display:none;text-align: left;"> 
+            <div class="row">
+                <p1>
+                    <h3> Contact & Links </h3> 
+                    <br> <br>
+                    Contact
+                </p1>
+                <br> <br>
+                <img src="./foto.jpg" alt="Profile Photo" class="right-image">
+            </div>
+        </div>
+
+        <!-- CV -->
         <iframe class="pdf2" id="main_CV2" src="./CV.pdf#view=FitH" style="display:none;" type="application/pdf"/></iframe>
         <embed class="pdf" id="main_CV" src="./CV.pdf#view=FitH" style="display:none;" type="application/pdf"/>
 
-
+    
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
