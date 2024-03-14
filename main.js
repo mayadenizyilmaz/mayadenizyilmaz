@@ -61,6 +61,9 @@ function adjustmargins() {
 
         var main = document.getElementById('main_CV');
         main.style.marginLeft = margin + 'px';
+
+        var main = document.getElementById('main_CV2');
+        main.style.marginLeft = margin + 'px';
     } 
     else {
         // Reset margin if viewport width is below threshold
@@ -81,6 +84,10 @@ function adjustmargins() {
 
         var main = document.getElementById('main_CV');
         main.style.marginLeft = '';
+
+        var main = document.getElementById('main_CV2');
+        main.style.marginLeft = '';
+
     }
 }
 
