@@ -12,7 +12,7 @@ body {
 
 .empty-block {
   position: relative; /* Set position to relative */
-  height: 100px; /* Set the height of the empty block */
+  height: 120px; /* Set the height of the empty block */
   background-color: #ffffffef; /* Optional background color */
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add a shadow at the bottom */
 }
@@ -69,11 +69,6 @@ h1, h2, h3 {
    /* Add other styles as needed */
 }
 
- .title {
-   padding: 12px;
-   justify-content: center;
-}
-
  .row {
   text-align: left;
   display: flex;
@@ -92,9 +87,12 @@ h1, h2, h3 {
 
  .right-image {
   padding: 20px;
-  max-width: 100%
+  display: block;
  }
-   
+
+ .bottom-image {
+  display: none;
+}
 
 .pdf{
     width: 1000px;
@@ -112,23 +110,25 @@ h1, h2, h3 {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add a shadow at the bottom */
   }
 
-  .topnav {
-    padding: 10px 0; /* Adjust padding for smaller screens */
-  }
 
   .topnav a {
     padding: 10px; /* Adjust padding for smaller screens */
     font-size: 16px; /* Decrease font size for smaller screens */
   }
 
-  .main {
-    padding: 10px; /* Adjust padding for smaller screens */
-    max-width: 90%; /* Adjust maximum width for smaller screens */
+  .bottom-image {
+    display: block;
   }
 
   .right-image {
-    padding: 10px; /* Adjust padding for smaller screens */
+    display: none;
   }
 
+  .row {
+    text-align: left;
+    display: flex;
+    width: 70%;
+   }
+  
   /* Add any other necessary adjustments for smaller screens */
 }
