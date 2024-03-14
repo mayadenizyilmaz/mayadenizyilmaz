@@ -92,6 +92,7 @@ h1, h2, h3 {
 
  .right-image {
   padding: 20px;
+  max-width: 100%
  }
    
 
@@ -100,4 +101,34 @@ h1, h2, h3 {
     height: 100%;
     background-color: #ffffffef;
     padding: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .empty-block {
+    position: relative; /* Set position to relative */
+    height: 200px; /* Set the height of the empty block */
+    background-color: #ffffffef; /* Optional background color */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add a shadow at the bottom */
+  }
+
+  .topnav {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+
+  .topnav a {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  .main {
+    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+  }
+
+  .right-image {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Add any other necessary adjustments for smaller screens */
 }

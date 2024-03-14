@@ -42,45 +42,46 @@ function adjustmargins() {
         var margin = Math.pow((vw - threshold) / 100, power) -200;
         margin = Math.max(margin, 30);
     
-    // Apply margin to top navigation bar
-    var topnav = document.getElementById('topnav');
-    topnav.style.marginLeft = margin + 'px';
-    
-    // Apply margin to main content
-    var main = document.getElementById('main');
-    main.style.marginLeft = margin + 'px';
+        // Apply margin to top navigation bar
+        var topnav = document.getElementById('topnav');
+        topnav.style.marginLeft = margin + 'px';
+        
+        // Apply margin to main content
+        var main = document.getElementById('main');
+        main.style.marginLeft = margin + 'px';
 
-    var main = document.getElementById('main_ResearchStatement');
-    main.style.marginLeft = margin + 'px';
+        var main = document.getElementById('main_ResearchStatement');
+        main.style.marginLeft = margin + 'px';
 
-    var main = document.getElementById('main_ResearchExperience');
-    main.style.marginLeft = margin + 'px';
+        var main = document.getElementById('main_ResearchExperience');
+        main.style.marginLeft = margin + 'px';
 
-    var main = document.getElementById('main_Contact');
-    main.style.marginLeft = margin + 'px';
+        var main = document.getElementById('main_Contact');
+        main.style.marginLeft = margin + 'px';
 
-    var main = document.getElementById('main_CV');
-    main.style.marginLeft = margin + 'px';
-} else {
-    // Reset margin if viewport width is below threshold
-    var topnav = document.getElementById('topnav');
-    topnav.style.marginLeft = '';
-    
-    var main = document.getElementById('main');
-    main.style.marginLeft = '';
+        var main = document.getElementById('main_CV');
+        main.style.marginLeft = margin + 'px';
+    } 
+    else {
+        // Reset margin if viewport width is below threshold
+        var topnav = document.getElementById('topnav');
+        topnav.style.marginLeft = '';
+        
+        var main = document.getElementById('main');
+        main.style.marginLeft = '';
 
-    var main = document.getElementById('main_ResearchStatement');
-    main.style.marginLeft = '';
+        var main = document.getElementById('main_ResearchStatement');
+        main.style.marginLeft = '';
 
-    var main = document.getElementById('main_ResearchExperience');
-    main.style.marginLeft = '';
+        var main = document.getElementById('main_ResearchExperience');
+        main.style.marginLeft = '';
 
-    var main = document.getElementById('main_Contact');
-    main.style.marginLeft = '';
+        var main = document.getElementById('main_Contact');
+        main.style.marginLeft = '';
 
-    var main = document.getElementById('main_CV');
-    main.style.marginLeft = '';
-}
+        var main = document.getElementById('main_CV');
+        main.style.marginLeft = '';
+    }
 }
 
 window.addEventListener('resize', adjustmargins);
